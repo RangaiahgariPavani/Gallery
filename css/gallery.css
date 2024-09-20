@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100&family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Tulpen+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.5s;
+
+}
+body{
+    background-image: linear-gradient(75deg,red,purple);
+    width: 100%;
+    height: 280vh;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+   
+}
+#galleryImageEdit{
+    width: 95%;
+    height: 95%;
+    background-color: black;
+    display: none;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 11;
+}
+#imageContainer{
+    width: 60%;
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+#editContainer{
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#editFiler{
+    width: 50%;
+    height: 100%;
+    background-color:snow;
+    border-left: 2px solid gray;
+}
+#editTransfrom{
+    width: 49%;
+    height: 100%;
+    background-color: snow;
+    border-left: 2px solid gray;
+}
+#image{
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+.filerContainer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    width: 80%;
+}
+h2{
+    text-align: center;
+}
+
+/* code for image Gallery */
+
+#grallery{
+    width: 95%;
+    height: 250vh;
+    background-color: rgba(0,0,0,0.541);
+    border-radius: 10px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#headingOfGallery{
+    color: transparent;
+    width: 80%;
+    font-size: 60px;
+    padding-left: 120px;
+    font-family: 'Dancing Script',cursive;
+    background-image: linear-gradient(75deg,yellow,lawngreen);
+    background-size: 1200px;
+    background-position: 1200px;
+    -webkit-background-clip:text;
+    animation: textAnimation 2s infinite linear both;
+}
+@keyframes textAnimation {
+    from{
+        background-position: 1200px;
+    }
+    to{
+        background-position: 0px;
+    }
+}
+
+#images{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+img{
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.2) rotateY(360deg);
+}
+
+/* bigImage Window css */
+
+#bigImage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.57);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#bigimg{
+    width: 80%;
+    height: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+#close,#closeGalleryEdit{
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-family: 'Playfair Display',sans-serif;
+    cursor: pointer;
+}
+#closeGalleryEdit{
+  left: 2%;
+  top:2%;
+  width: 30px;
+}
+#editButton{
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+#image{
+    width: 80%;
+    height: 60%;
+    background-size:100% 100%;
+}
